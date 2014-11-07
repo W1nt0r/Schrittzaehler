@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3oa-Mo-3Mo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="StepCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgL-Ke-7En" customClass="GraphView">
+                                <rect key="frame" x="0.0" y="488" width="600" height="112"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="F9l-Gp-Hje"/>
+                                    <constraint firstAttribute="height" constant="112" id="eZn-y9-uP7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="rzm-Rx-MTs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eZn-y9-uP7"/>
+                                        <exclude reference="rzm-Rx-MTs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="MgL-Ke-7En" secondAttribute="centerX" id="Qzj-BK-SZT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MgL-Ke-7En" secondAttribute="bottom" constant="-10" id="Wr3-WQ-84o"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MgL-Ke-7En" secondAttribute="bottom" id="d7f-yp-Xbr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MgL-Ke-7En" secondAttribute="trailing" constant="-16" id="mAK-aH-VhV"/>
+                            <constraint firstItem="MgL-Ke-7En" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="yWo-BU-ItR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qzj-BK-SZT"/>
+                                <exclude reference="Wr3-WQ-84o"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="oAp-Ts-0Ex"/>
+                    <connections>
+                        <outlet property="graphView" destination="MgL-Ke-7En" id="QaN-0I-V4f"/>
+                        <segue destination="2Pf-OB-Rxe" kind="presentation" identifier="qrcodeReader" id="YBv-iZ-Fqp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="585"/>
+        </scene>
+        <!--Code Reader View Controller-->
+        <scene sceneID="aEN-Rr-fvj">
+            <objects>
+                <viewController id="2Pf-OB-Rxe" customClass="QRCodeReaderViewController" customModule="StepCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dKA-dI-0qM"/>
+                        <viewControllerLayoutGuide type="bottom" id="maF-QF-B1a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kmf-ZX-DuV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="DNt-Np-lvV" kind="unwind" identifier="unwindToMainScreen" unwindAction="unwindFromQRCodeScanner:" id="yWl-Ek-CeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL5-on-0sH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DNt-Np-lvV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2086" y="585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="myI-ZR-cg9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3oa-Mo-3Mo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="paJ-bH-uUV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="G8h-DO-due"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ie6-cH-8ed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="585"/>
+        </scene>
+    </scenes>
+</document>
