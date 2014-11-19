@@ -33,13 +33,20 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Willkommen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AL-o2-69m">
+                                <rect key="frame" x="253" y="289" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="MgL-Ke-7En" secondAttribute="centerX" id="Qzj-BK-SZT"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MgL-Ke-7En" secondAttribute="bottom" constant="-10" id="Wr3-WQ-84o"/>
+                            <constraint firstAttribute="centerY" secondItem="4AL-o2-69m" secondAttribute="centerY" constant="0.5" id="b6c-ra-XiU"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MgL-Ke-7En" secondAttribute="bottom" id="d7f-yp-Xbr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MgL-Ke-7En" secondAttribute="trailing" constant="-16" id="mAK-aH-VhV"/>
+                            <constraint firstAttribute="centerX" secondItem="4AL-o2-69m" secondAttribute="centerX" id="um1-Fm-Eaa"/>
                             <constraint firstItem="MgL-Ke-7En" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="yWo-BU-ItR"/>
                         </constraints>
                         <variation key="default">
@@ -52,6 +59,7 @@
                     <navigationItem key="navigationItem" id="oAp-Ts-0Ex"/>
                     <connections>
                         <outlet property="graphView" destination="MgL-Ke-7En" id="QaN-0I-V4f"/>
+                        <outlet property="lblStatus" destination="4AL-o2-69m" id="lmL-Us-4Tj"/>
                         <segue destination="2Pf-OB-Rxe" kind="presentation" identifier="qrcodeReader" id="YBv-iZ-Fqp"/>
                     </connections>
                 </viewController>

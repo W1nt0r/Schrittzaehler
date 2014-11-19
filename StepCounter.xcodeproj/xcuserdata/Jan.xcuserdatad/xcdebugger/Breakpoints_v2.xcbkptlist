@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StepCounter/ViewController.swift"
-            timestampString = "437062759.664587"
+            timestampString = "438095134.998976"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "nextStep()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StepCounter/ViewController.swift"
-            timestampString = "437062759.664587"
+            timestampString = "438095134.998976"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "startStepCounterWithSteptarget(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -145,6 +145,52 @@
             endingLineNumber = "43"
             landmarkName = "speak(_:onComplete:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StepCounter/ViewController.swift"
+            timestampString = "438095134.998976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepCounter.ViewController.nextStep (StepCounter.ViewController)() -&gt; ()"
+                  moduleName = "StepCounter"
+                  urlString = "file:///Users/Jan/xcodeprojs/appquest/Stepcounter/StepCounter/ViewController.swift"
+                  timestampString = "438095135.015714"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StepCounter.ViewController.(nextStep (StepCounter.ViewController) -&gt; () -&gt; ()).(closure #3)"
+                  moduleName = "StepCounter"
+                  urlString = "file:///Users/Jan/xcodeprojs/appquest/Stepcounter/StepCounter/ViewController.swift"
+                  timestampString = "438095135.015956"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var graphView: GraphView!
+    @IBOutlet var lblStatus: UILabel!
     
     let speechSynthesizer = SpeechSynthesizer()
     var solutionLogger:SolutionLogger!
@@ -51,6 +52,10 @@ class ViewController: UIViewController {
         stepCounter.onStep = {
             println(toString(self.stepCounter.steps))
             //self.speechSynthesizer.speak("\(self.stepCounter.steps)", onComplete: {})
+            if let stepTarget = self.stepCounter.stepTarget {
+                let stepsRemaining = stepTarget - self.stepCounter.steps
+                self.lblStatus.text = "\(stepsRemaining) Schritte verbleiben."
+            }
         }
         stepCounter.start()
     }
@@ -67,17 +72,27 @@ class ViewController: UIViewController {
             
             if let schritte = item.toInt() {
                 self.startStepCounterWithSteptarget(schritte)
+                let text = "Gehen Sie \(schritte) Schritte geradeaus."
                 
-                self.speechSynthesizer.speak("Gehen Sie nun \(schritte) Schritte geradeaus.", onComplete: {
+                self.lblStatus.text = text
+                
+                self.speechSynthesizer.speak(text, onComplete: {
                 })
             } else {
+                let text = "Drehen Sie sich nach: \(item)."
                 println(item)
-                self.speechSynthesizer.speak("Drehen Sie sich nun nach: \(item).", onComplete: { () -> () in
+                
+                self.lblStatus.text = text
+                
+                self.speechSynthesizer.speak(text, onComplete: { () -> () in
                     self.nextStep()
                 })
             }
         } else {
             //println("Ende")
+            
+            self.lblStatus.text = "Ende"
+            
             self.speechSynthesizer.speak("Sie haben Ihr Ziel erreicht.", onComplete: { () -> () in
                 self.stepCounter?.stop()
                 self.actions = []

@@ -10,31 +10,31 @@
 	<string>StepCounter</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EB79B4999E7F6323F8FCBE7E0B17C6B93C38111D</key>
-		<string>github.com:lightforce/AppQuest.git</string>
+		<key>D0C00434A3C8EB2F7FFAF3D40F8E7FE0B9D6346A</key>
+		<string>https://github.com/W1nt0r/Schrittzaehler.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Stepcounter/StepCounter.xcodeproj</string>
+	<string>StepCounter.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EB79B4999E7F6323F8FCBE7E0B17C6B93C38111D</key>
-		<string>../../..</string>
+		<key>D0C00434A3C8EB2F7FFAF3D40F8E7FE0B9D6346A</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:lightforce/AppQuest.git</string>
+	<string>https://github.com/W1nt0r/Schrittzaehler.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EB79B4999E7F6323F8FCBE7E0B17C6B93C38111D</string>
+	<string>D0C00434A3C8EB2F7FFAF3D40F8E7FE0B9D6346A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EB79B4999E7F6323F8FCBE7E0B17C6B93C38111D</string>
+			<string>D0C00434A3C8EB2F7FFAF3D40F8E7FE0B9D6346A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AppQuest</string>
+			<string>Stepcounter</string>
 		</dict>
 	</array>
 </dict>
